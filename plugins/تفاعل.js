@@ -1,5 +1,4 @@
 let handler = async (m, { conn }) => {
-    // الكود هنا غادي يتنفذ قبل كل رسالة
 }
 
 handler.before = async (m, { conn }) => {
@@ -13,9 +12,9 @@ handler.before = async (m, { conn }) => {
             console.error('❌ فشل في إرسال التفاعل:', error)
         }
         
-        return true // true = كمل تنفيذ الرسالة عادي
+        return true
     }
-    return false // false = تجاهل
+    return false
 }
 
 export default handler
